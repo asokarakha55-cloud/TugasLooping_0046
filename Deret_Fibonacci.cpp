@@ -14,7 +14,7 @@ void inputNumber();
 void displayresult(int type);
 void showmenu();
 
-int main()
+int main(
 {
     bool running = true;
 
