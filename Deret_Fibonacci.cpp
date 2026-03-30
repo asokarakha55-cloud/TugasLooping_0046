@@ -89,4 +89,5 @@ void displayresult(int type)
 void showmenu()
 {
     cout << "=== PROGRAM PENGECEK BILANGAN ===" << endl;
+    cout << "1. Cek Bilangan Prima" << endl;
 }
