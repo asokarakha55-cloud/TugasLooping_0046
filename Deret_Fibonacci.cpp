@@ -37,6 +37,10 @@ int main()
             cout << "Keluar dari program, Terima kasih!" << endl;
             running = false;
             break;
+        default:
+            cout << "Pilihan tidak valid, silakan coba lagi." << endl;
+            break;
         }
+        cout << endl; // Menambahkan baris kosong untuk pemisah antar iterasi
     }
 }
