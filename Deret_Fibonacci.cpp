@@ -45,3 +45,19 @@ int main()
     }
     return 0;
 }
+
+// Definisi fungsi
+
+bool isprime(int num)
+{
+    if (num < 0)
+        return false;
+    int a = 0, b = 1;
+    while (a < num)
+    {
+        int temp = a + b;
+        a = b;
+        b = temp;
+    }
+    return (a == num);
+}
