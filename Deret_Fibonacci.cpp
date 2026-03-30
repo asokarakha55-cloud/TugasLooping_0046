@@ -85,3 +85,7 @@ void displayresult(int type)
             cout << n << "BUKAN bagian dari deret fibonacci." << endl;
     }
 }
+
+void showmenu()
+{
+}
