@@ -90,4 +90,5 @@ void showmenu()
 {
     cout << "=== PROGRAM PENGECEK BILANGAN ===" << endl;
     cout << "1. Cek Bilangan Prima" << endl;
+    cout << "2. Cek Bilangan fibonacci" << endl;
 }
