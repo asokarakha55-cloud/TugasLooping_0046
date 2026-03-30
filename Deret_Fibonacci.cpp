@@ -24,5 +24,11 @@ int main()
         cin >> pilihan;
 
         switch (pilihan)
+        {
+        case 1:
+            inputnumber();
+            displayresult(1);
+            break;
+        }
     }
 }
