@@ -30,7 +30,7 @@ int main()
             displayresult(1);
             break;
         case 2:
-            Inputnumber();
+            inputnumber();
             displayresult(2);
             break;
         case 0:
@@ -43,4 +43,5 @@ int main()
         }
         cout << endl; // Menambahkan baris kosong untuk pemisah antar iterasi
     }
+    return 0;
 }
