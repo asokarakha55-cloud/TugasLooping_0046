@@ -29,6 +29,10 @@ int main()
             inputnumber();
             displayresult(1);
             break;
+        case 2:
+            Inputnumber();
+            displayresult(2);
+            break;
         }
     }
 }
