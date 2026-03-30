@@ -33,9 +33,9 @@ int main()
             Inputnumber();
             displayresult(2);
             break;
-        case 3:
-            Inputnumber();
-            displayresult(3);
+        case 0:
+            cout << "Keluar dari program, Terima kasih!" << endl;
+            running = false;
             break;
         }
     }
