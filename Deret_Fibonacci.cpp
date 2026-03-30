@@ -67,3 +67,21 @@ void inputnumber()
     cout << "Masukkan angka: ";
     cin >> n;
 }
+
+void displayresult(int type)
+{
+    if (type == 1)
+    {
+        if (isprime(n))
+            cout << n << "adalah bilangan prima." << endl;
+        else
+            cout << n << "BUKAN bilangan prima." << endl;
+    }
+    else
+    {
+        if (isFibonacci(n))
+            cout << n << "termasuk dalam deret fibonacci." << endl;
+        else
+            cout << n << "BUKAN bagian dari deret fibonacci." << endl;
+    }
+}
