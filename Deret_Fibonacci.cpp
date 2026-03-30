@@ -92,4 +92,5 @@ void showmenu()
     cout << "1. Cek Bilangan Prima" << endl;
     cout << "2. Cek Bilangan fibonacci" << endl;
     cout << "0. Keluar" << endl;
+    cout << "Pilih menu: ";
 }
