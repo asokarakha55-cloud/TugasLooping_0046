@@ -33,6 +33,10 @@ int main()
             Inputnumber();
             displayresult(2);
             break;
+        case 3:
+            Inputnumber();
+            displayresult(3);
+            break;
         }
     }
 }
