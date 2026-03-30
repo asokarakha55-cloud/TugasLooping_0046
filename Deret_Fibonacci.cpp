@@ -61,3 +61,9 @@ bool isprime(int num)
     }
     return (a == num);
 }
+
+void inputnumber()
+{
+    cout << "Masukkan angka: ";
+    cin >> n;
+}
