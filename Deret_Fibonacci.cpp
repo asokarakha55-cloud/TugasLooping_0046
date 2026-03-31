@@ -2,17 +2,16 @@
 
 using namespace std;
 
-// menambahkan variabel global
+// variabel global
 int n;
 int pilihan;
 
-// menambahkan fungsi
-
-bool isprime(int num);
+// --- Prototipe Fungsi ---
+bool isPrime(int num);
 bool isFibonacci(int num);
 void inputNumber();
-void displayresult(int type);
-void showmenu();
+void displayResult(int type);
+void showMenu();
 
 int main()
 {
@@ -20,39 +19,53 @@ int main()
 
     while (running)
     {
-        showmenu();
+        showMenu();
         cin >> pilihan;
 
         switch (pilihan)
         {
         case 1:
-            inputnumber();
-            displayresult(1);
+            inputNumber();
+            displayResult(1);
             break;
         case 2:
-            inputnumber();
-            displayresult(2);
+            inputNumber();
+            displayResult(2);
             break;
         case 0:
-            cout << "Keluar dari program, Terima kasih!" << endl;
+            cout << "Keluar dari program. Terima kasih!" << endl;
             running = false;
             break;
         default:
-            cout << "Pilihan tidak valid, silakan coba lagi." << endl;
+            cout << "Pilihan tidak valid. Silakan coba lagi." << endl;
             break;
         }
-        cout << endl; // Menambahkan baris kosong untuk pemisah antar iterasi
+        cout << endl;
     }
     return 0;
 }
 
-// Definisi fungsi
+bool isPrime(int num)
+{
+    if (num <= 1)
+        return false;
+    int i = 2;
 
-bool isprime(int num)
+    while (i * i <= num)
+    {
+        if (num % i == 0)
+            return false;
+        i++;
+    }
+    return true;
+}
+
+bool isFibonacci(int num)
 {
     if (num < 0)
         return false;
     int a = 0, b = 1;
+
     while (a < num)
     {
         int temp = a + b;
@@ -62,35 +75,35 @@ bool isprime(int num)
     return (a == num);
 }
 
-void inputnumber()
+void inputNumber()
 {
     cout << "Masukkan angka: ";
     cin >> n;
 }
 
-void displayresult(int type)
+void displayResult(int type)
 {
     if (type == 1)
     {
-        if (isprime(n))
-            cout << n << "adalah bilangan prima." << endl;
+        if (isPrime(n))
+            cout << n << " adalah bilangan prima." << endl;
         else
-            cout << n << "BUKAN bilangan prima." << endl;
+            cout << n << " BUKAN bilangan prima." << endl;
     }
     else
     {
         if (isFibonacci(n))
-            cout << n << "termasuk dalam deret fibonacci." << endl;
+            cout << n << " termasuk dalam deret Fibonacci." << endl;
         else
-            cout << n << "BUKAN bagian dari deret fibonacci." << endl;
+            cout << n << " BUKAN bagian dari deret Fibonacci." << endl;
     }
 }
 
-void showmenu()
+void showMenu()
 {
     cout << "=== PROGRAM PENGECEK BILANGAN ===" << endl;
     cout << "1. Cek Bilangan Prima" << endl;
-    cout << "2. Cek Bilangan fibonacci" << endl;
+    cout << "2. Cek Bilangan Fibonacci" << endl;
     cout << "0. Keluar" << endl;
     cout << "Pilih menu: ";
 }
